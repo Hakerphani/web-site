@@ -13,7 +13,7 @@ const videos = [
     },
 
     {
-        id: 1,
+        id: 2,
         title: "cyber security",
         thumbnail: "thumbnails/thumb1.png",
         src: "videos/video1.mp4",
@@ -25,7 +25,7 @@ const videos = [
     },
     
     {
-        id: 2,
+        id: 3,
         title: "overthewire levels",
         thumbnail: "thumbnails/thumb1.png",
         src: "videos/video1.mp4",
