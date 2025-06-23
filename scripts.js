@@ -11,6 +11,19 @@ const videos = [
         likes: 0,
         comments: ["Great video!", "Loved the beach vibes!"]
     },
+
+    {
+        id: 1,
+        title: "cyber security",
+        thumbnail: "thumbnails/thumb1.png",
+        src: "videos/video1.mp4",
+        description: "A fun trip to the beach!",
+        duration: "4:15",
+        category: "music",
+        likes: 0,
+        comments: ["Great video!", "Loved the beach vibes!"]
+    },
+    
     {
         id: 2,
         title: "overthewire levels",
