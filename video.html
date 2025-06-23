@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Watch videos on VideoHub">
+    <meta name="keywords" content="VideoHub, video streaming, watch video">
+    <meta name="author" content="Your Name">
+    <title>VideoHub - Watch</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body class="bg-gray-100 dark:bg-gray-900 text-gray-900 dark:text-white transition-colors duration-300">
+    <!-- Navbar -->
+    <nav class="bg-white dark:bg-gray-800 shadow-lg fixed w-full z-20">
+        <div class="container mx-auto px-4 py-3 flex justify-between items-center">
+            <div class="flex items-center">
+                <button id="sidebar-toggle" class="mr-4 text-2xl"><i class="fas fa-bars"></i></button>
+                <a href="index.html" class="text-2xl font-bold">VideoHub</a>
+            </div>
+            <div class="flex items-center w-1/3">
+                <input id="search-bar" type="text" placeholder="Search videos..." class="w-full px-4 py-2 rounded-l-full bg-gray-100 dark:bg-gray-700 border-none focus:outline-none">
+                <button id="search-btn" class="px-4 py-2 bg-gray-200 dark:bg-gray-600 rounded-r-full"><i class="fas fa-search"></i></button>
+            </div>
+            <button id="theme-toggle" class="text-2xl"><i class="fas fa-moon"></i></button>
+        </div>
+    </nav>
+
+    <!-- Sidebar -->
+    <aside id="sidebar" class="fixed top-0 left-0 h-full w-64 bg-white dark:bg-gray-800 shadow-lg transform -translate-x-full transition-transform duration-300 z-10">
+        <div class="p-4">
+            <h2 class="text-xl font-bold mb-4">Menu</h2>
+            <ul>
+                <li><a href="index.html" class="block py-2 px-4 hover:bg-gray-200 dark:hover:bg-gray-700">Home</a></li>
+                <li><a href="#" class="block py-2 px-4 hover:bg-gray-200 dark:hover:bg-gray-700">Subscriptions</a></li>
+                <li><a href="#" class="block py-2 px-4 hover:bg-gray-200 dark:hover:bg-gray-700">Library</a></li>
+            </ul>
+        </div>
+    </aside>
+
+    <!-- Video Player -->
+    <main class="container mx-auto px-4 pt-20 pb-10">
+        <div class="flex flex-col lg:flex-row gap-6">
+            <div class="w-full lg:w-3/4">
+                <div class="relative">
+                    <video id="video-player" class="w-full rounded-lg shadow-lg" controls>
+                        <source id="video-source" src="" type="video/mp4">
+                        Your browser does not support the video tag.
+                    </video>
+                    <div id="progress-bar" class="w-full h-1 bg-gray-300 dark:bg-gray-600 mt-2">
+                        <div id="progress" class="h-full bg-red-500" style="width: 0%"></div>
+                    </div>
+                </div>
+                <h1 id="video-title" class="text-2xl font-bold mt-4"></h1>
+                <p id="video-description" class="text-gray-600 dark:text-gray-400 mt-2"></p>
+                <div class="flex items-center gap-4 mt-4">
+                    <button id="like-btn" class="flex items-center gap-2 px-4 py-2 bg-gray-200 dark:bg-gray-700 rounded-full">
+                        <i class="fas fa-thumbs-up"></i> <span id="like-count">0</span>
+                    </button>
+                </div>
+                <!-- Comments Section -->
+                <div class="mt-6">
+                    <h2 class="text-xl font-bold mb-4">Comments</h2>
+                    <div id="comments" class="space-y-4">
+                        <!-- Mock comments populated by JavaScript -->
+                    </div>
+                </div>
+            </div>
+            <div class="w-full lg:w-1/4">
+                <h2 class="text-xl font-bold mb-4">Related Videos</h2>
+                <div id="related-videos" class="space-y-4">
+                    <!-- Related videos populated by JavaScript -->
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <script src="scripts.js"></script>
+</body>
+</html>
