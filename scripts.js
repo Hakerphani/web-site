@@ -8,7 +8,7 @@ const videos = [
         description: "A fun trip to the beach!",
         duration: "4:15",
         category: "music",
-        likes: 0,
+        likes: 75,
         comments: ["Great video!", "Loved the beach vibes!"]
     },
 
