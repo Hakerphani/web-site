@@ -3,8 +3,8 @@ const videos = [
     {
         id: 1,
         title: "cyber security",
-        thumbnail: "t/thumb1.png",
-        src: "/video1.mp4",
+        thumbnail: "thumb1.png",
+        src: "video1.mp4",
         description: "A fun trip to the beach!",
         duration: "4:15",
         category: "music",
